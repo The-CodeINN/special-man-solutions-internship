@@ -18,5 +18,95 @@
     <nav class="Navbar">
       <a href="#">Login</a>
     </nav>
+
+    <div class="form-container">
+
+      <div class="sideImage">
+        <img src="./assets/image.png" alt="" srcset="">
+      </div>
+
+      <form action="#" id="form">
+        <div class="title">Create Account</div>
+        <div>
+          <label for="firstName">First Name</label>
+          <i class="fas fa-user form-icon"></i>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Enter First Name"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <i class="fas fa-user form-icon"></i>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Enter Last Name"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="phoneNumber">Phone Number</label>
+          <i class="fa-solid fa-mobile-screen-button form-icon"></i>
+          <input
+            type="tel"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Enter Phone Number"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <i class="fa-solid fa-envelope form-icon"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email Address"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <i class="fa-solid fa-lock form-icon"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+
+          <div class="error"></div>
+        </div>
+
+        <button class="submit-button" id="submit-btn" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </body>
+  <script src="main.js"></script>
 </html>
