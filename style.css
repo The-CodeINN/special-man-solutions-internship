@@ -64,25 +64,28 @@ body {
   flex-direction: row;
 }
 
-.sideImage img{
+.sideImage img {
   height: 100vh;
 }
 
 form {
-  width: 55%;
-  max-width: none;
-  padding: 50px;
+  width: 50%;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .title {
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 form div input {
@@ -91,8 +94,9 @@ form div input {
   border-radius: 8px;
   outline: none;
   border: 2px solid #c4c4c4;
-  padding: 0 30px;
+  padding: 0 10px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
 }
 
 form div {
@@ -134,36 +138,124 @@ form div .form-icon {
 }
 
 .submit-button {
-  margin-top: 15px;
+  margin: 20px auto 0;
   width: 50%;
   height: 45px;
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease;
+  display: block;
 }
 
 .submit-button:hover {
   opacity: 0.8;
 }
 
-/* Responsiveness
-@media (max-width: 900px) {
+/* Mobile */
+@media only screen and (max-width: 767px) {
   .form-container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .sideImage {
+    display: none;
   }
 
   form {
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
   }
 
-  .btn {
-    flex-direction: column;
+  .title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
   }
-  .sideImage {
-    height: 70vh;
+
+  label {
+    font-size: 13px;
   }
-} */
+
+  form div input {
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 25px;
+    font-size: 13px;
+  }
+
+  form div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border: 2px solid #f2796e;
+  }
+  
+  form div i {
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  form div .form-icon {
+    right: 0;
+  }  
+
+  .error {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .success-icon,
+  .failure-icon {
+    font-size: 12px;
+  }
+
+  .failure-icon,
+  .error {
+    color: red;
+    margin-top: 2px;
+  }
+
+  .success-icon {
+    color: green;
+  }
+
+  .success-icon,
+  .failure-icon {
+    opacity: 0;
+  }
+
+  .submit-button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submit-button:hover {
+    opacity: 0.8;
+  }
+}
